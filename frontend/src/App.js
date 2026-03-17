@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 
-const API_URL = "https://" + window.location.hostname.replace("-3000", "-3001");
+const API_URL = "https://5nyzjthmudhxtmov4e3he7wzoy0bvwxl.lambda-url.ap-south-1.on.aws";
 
 const BOTS = {
   "Aristotle":         { emoji:"🏛️", color:"#c9a84c", glow:"#c9a84c", dark:"#7a5c1e", title:"The Philosopher",   trait:"calm & logical",       symbol:"Φ", grad:"135deg,#c9a84c22,#c9a84c06" },

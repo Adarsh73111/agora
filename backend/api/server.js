@@ -5,6 +5,13 @@ require("dotenv").config();
 const { runDebate, BOTS } = require("../bot-engine/debateEngine");
 
 const app = express();
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "*");
+  res.header("Access-Control-Allow-Methods", "*");
+  if (req.method === "OPTIONS") return res.sendStatus(200);
+  next();
+});
 const PORT = process.env.PORT || 3001;
 
 app.use(cors());
