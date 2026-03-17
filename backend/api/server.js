@@ -73,3 +73,13 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
+
+// Autonomous daily debate engine
+require("../autonomous/dailyDebate");
+
+// Manual trigger endpoint (for testing)
+app.post("/api/trigger-debate", async (req, res) => {
+  const { runDailyDebate } = require("../autonomous/dailyDebate");
+  res.json({ success: true, message: "Daily debate triggered manually!" });
+  runDailyDebate();
+});
