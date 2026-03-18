@@ -22,3 +22,14 @@ npm-debug.log*
 # Build outputs
 dist/
 build/
+# Environment
+backend/.env
+*.env
+
+# Build
+frontend/build/
+*.zip
+
+# AWS
+aws/
+awscliv2.zip

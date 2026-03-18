@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - NEWS_API_KEY=${NEWS_API_KEY}
+      - GMAIL_USER=${GMAIL_USER}
+      - GMAIL_PASS=${GMAIL_PASS}
+      - PORT=3001
+    volumes:
+      - ./backend:/app/backend
+      - /app/backend/node_modules
+
+  frontend:
+    image: node:20-alpine
+    working_dir: /app/frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:3001
+    volumes:
+      - ./frontend:/app/frontend
+      - /app/frontend/node_modules
+    command: npm start
+    depends_on:
+      - backend

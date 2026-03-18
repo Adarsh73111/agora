@@ -1,0 +1,15 @@
+{
+  "name": "agora",
+  "version": "1.0.0",
+  "description": "AI Debate Platform — 5 minds, one topic, zero agenda",
+  "scripts": {
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "setup": "bash setup.sh",
+    "docker:up": "docker-compose up --build",
+    "docker:down": "docker-compose down"
+  },
+  "keywords": ["ai", "debate", "platform", "groq", "react", "nodejs"],
+  "author": "Adarsh Misra",
+  "license": "MIT"
+}
