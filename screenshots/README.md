@@ -1,5 +1,11 @@
 Add your screenshots here:
 - home.png
-- debate.png  
+- https://github.com/Adarsh73111/agora/blob/main/screenshots/Screenshot%202026-03-20%20175629.png
+- debate.png
+- https://github.com/Adarsh73111/agora/blob/main/screenshots/Screenshot%202026-03-20%20175708.png  
 - complete.png
+- https://github.com/Adarsh73111/agora/blob/main/screenshots/Screenshot%202026-03-20%20175629.png
+- https://github.com/Adarsh73111/agora/blob/main/screenshots/Screenshot%202026-03-20%20175708.png
+- https://github.com/Adarsh73111/agora/blob/main/screenshots/Screenshot%202026-03-20%20175757.png
 - email.png
+- https://github.com/Adarsh73111/agora/blob/main/screenshots/Screenshot%202026-03-20%20180220.png
